@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/all_comment_con"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/comment_con"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp">
+            <TextView
+                android:id="@+id/nickname1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:letterSpacing="-0.05"
+                android:textColor="@color/colorTitleGrey"
+                android:textSize="15sp"
+                tools:text="닉네임" />
+
+            <TextView
+                android:id="@+id/write_recomment"
+                android:layout_toRightOf="@id/nickname1"
+                android:layout_alignBottom="@+id/nickname1"
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:letterSpacing="-0.05"
+                android:textColor="@color/colorHintGrey"
+                android:textSize="13sp"
+                android:text="댓글달기" />
+
+            <TextView
+                android:id="@+id/report_comment"
+                android:layout_toRightOf="@id/write_recomment"
+                android:layout_alignBottom="@+id/nickname1"
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:letterSpacing="-0.05"
+                android:textColor="@color/colorHintGrey"
+                android:textSize="13sp"
+                android:text="신고" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_alignParentRight="true"
+                android:layout_alignBottom="@+id/nickname1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:includeFontPadding="false"
+                android:letterSpacing="-0.05"
+                android:textColor="@color/colorCommentDateGrey"
+                android:textSize="15sp"
+                tools:text="2019-07-12 12:37" />
+            <TextView
+                android:id="@+id/edit_comment"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="40dp"
+                android:layout_below="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:includeFontPadding="false"
+                android:letterSpacing="-0.05"
+                android:textColor="@color/colorCommentDateGrey"
+                android:textSize="13sp"
+                android:text="수정" />
+            <TextView
+                android:id="@+id/delete_comment"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:includeFontPadding="false"
+                android:letterSpacing="-0.05"
+                android:textColor="@color/colorCommentDateGrey"
+                android:textSize="13sp"
+                android:text="삭제" />
+
+            <TextView
+                android:id="@+id/content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nickname1"
+                android:layout_marginTop="20dp"
+                android:includeFontPadding="false"
+                android:letterSpacing="-0.05"
+                android:minLines="1"
+                android:textColor="@color/colorCommentGrey"
+                android:textSize="13sp"
+                tools:text="댓글 내용입니다.ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd" />
+
+
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/colorLineGrey" />
+
+        <RelativeLayout
+            android:id="@+id/re_comment_con"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp">
+
+            <ImageView
+                android:id="@+id/re_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/comment2"/>
+
+            <TextView
+                android:id="@+id/nickname2"
+                android:layout_toRightOf="@+id/re_comment"
+                android:layout_marginLeft="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:letterSpacing="-0.05"
+                android:textColor="@color/colorTitleGrey"
+                android:textSize="15sp"
+                tools:text="닉네임" />
+
+            <TextView
+                android:id="@+id/re_report"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/nickname"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@id/nickname2"
+                android:includeFontPadding="false"
+                android:letterSpacing="-0.05"
+                android:text="신고"
+                android:textColor="@color/colorHintGrey"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/re_date"
+                android:layout_alignParentRight="true"
+                android:layout_alignBottom="@+id/nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:includeFontPadding="false"
+                android:letterSpacing="-0.05"
+                android:textColor="@color/colorCommentDateGrey"
+                android:textSize="15sp"
+                tools:text="2019-07-12 12:37" />
+
+            <TextView
+                android:id="@+id/edit_re"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="40dp"
+                android:layout_below="@+id/re_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:includeFontPadding="false"
+                android:letterSpacing="-0.05"
+                android:textColor="@color/colorCommentDateGrey"
+                android:textSize="13sp"
+                android:text="수정" />
+            <TextView
+                android:id="@+id/delete_re"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/re_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:includeFontPadding="false"
+                android:letterSpacing="-0.05"
+                android:textColor="@color/colorCommentDateGrey"
+                android:textSize="13sp"
+                android:text="삭제" />
+
+            <TextView
+                android:id="@+id/re_content"
+                android:layout_below="@+id/nickname2"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:letterSpacing="-0.05"
+                android:minLines="1"
+                android:textColor="@color/colorCommentGrey"
+                android:textSize="13sp"
+                tools:text="댓글 내용입니다." />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/colorLineGrey" />
+    </LinearLayout>
+
+
+</LinearLayout>

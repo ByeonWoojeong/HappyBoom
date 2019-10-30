@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context=".Send2Activity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#fff">
+
+        <FrameLayout
+            android:id="@+id/back_con"
+            android:layout_width="45dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="22dp"
+                android:layout_height="17dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/back" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:includeFontPadding="false"
+            android:letterSpacing="-0.05"
+            android:text="공유하기"
+            android:textColor="@color/colorTitleGrey"
+            android:textSize="18sp" />
+
+        <FrameLayout
+            android:id="@+id/share_con"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:visibility="gone"
+            android:layout_marginRight="50dp">
+            <ImageView
+                android:id="@+id/share"
+                android:layout_width="18dp"
+                android:layout_height="23dp"
+                android:layout_gravity="center"
+                android:src="@drawable/share2" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/contact_con"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:layout_gravity="end"
+            android:visibility="gone">
+            <ImageView
+                android:id="@+id/contact"
+                android:layout_width="20dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:src="@drawable/address" />
+        </FrameLayout>
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorLineGrey" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#000"
+            android:gravity="center"
+            android:layout_weight="9">
+
+            <VideoView
+                android:id="@+id/video_view"
+                android:layout_gravity="center"
+                android:scaleType="centerInside"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/ok_con"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@color/colorMain">
+
+            <TextView
+                android:id="@+id/ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:includeFontPadding="false"
+                android:letterSpacing="-0.05"
+                android:text="공유하기"
+                android:textColor="#fff"
+                android:textSize="17sp"
+                />
+
+        </FrameLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".TermsListActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#fff">
+        <FrameLayout
+            android:id="@+id/back_con"
+            android:layout_width="45dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="22dp"
+                android:layout_height="17dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/back" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:includeFontPadding="false"
+            android:letterSpacing="-0.05"
+            android:text="이용 약관"
+            android:textColor="@color/colorTitleGrey"
+            android:textSize="18sp" />
+    </FrameLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorLineGrey" />
+
+  <FrameLayout
+      android:id="@+id/service_con"
+      android:layout_width="match_parent"
+      android:layout_height="60dp"
+      android:background="#fff">
+      <TextView
+          android:id="@+id/service"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="21dp"
+          android:layout_gravity="center_vertical"
+          android:includeFontPadding="false"
+          android:letterSpacing="-0.05"
+          android:text="서비스 이용 약관"
+          android:textColor="@color/colorTitleGrey"
+          android:textSize="15sp" />
+  </FrameLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorLineGrey" />
+
+    <FrameLayout
+        android:id="@+id/privacy1_con"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#fff">
+        <TextView
+            android:id="@+id/privacy1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="21dp"
+            android:layout_gravity="center_vertical"
+            android:includeFontPadding="false"
+            android:letterSpacing="-0.05"
+            android:text="개인 정보 처리 방침"
+            android:textColor="@color/colorTitleGrey"
+            android:textSize="15sp" />
+    </FrameLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorLineGrey" />
+
+    <FrameLayout
+        android:id="@+id/privacy2_con"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#fff">
+        <TextView
+            android:id="@+id/privacy2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="21dp"
+            android:layout_gravity="center_vertical"
+            android:includeFontPadding="false"
+            android:letterSpacing="-0.05"
+            android:text="개인 정보 이용/수집"
+            android:textColor="@color/colorTitleGrey"
+            android:textSize="15sp" />
+    </FrameLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorLineGrey" />
+
+    <FrameLayout
+        android:id="@+id/payment_con"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#fff">
+        <TextView
+            android:id="@+id/payment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="21dp"
+            android:layout_gravity="center_vertical"
+            android:includeFontPadding="false"
+            android:letterSpacing="-0.05"
+            android:text="결제 안내 및 유의 사항"
+            android:textColor="@color/colorTitleGrey"
+            android:textSize="15sp" />
+    </FrameLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorLineGrey" />
+
+    <FrameLayout
+        android:id="@+id/refund_con"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#fff">
+        <TextView
+            android:id="@+id/refund"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="21dp"
+            android:layout_gravity="center_vertical"
+            android:includeFontPadding="false"
+            android:letterSpacing="-0.05"
+            android:text="환불 정책"
+            android:textColor="@color/colorTitleGrey"
+            android:textSize="15sp" />
+    </FrameLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorLineGrey" />
+
+</LinearLayout>

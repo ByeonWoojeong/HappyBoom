@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".EditProfileCEOActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#fff">
+
+        <FrameLayout
+            android:id="@+id/back_con"
+            android:layout_width="45dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="22dp"
+                android:layout_height="17dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/back" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:includeFontPadding="false"
+            android:letterSpacing="-0.05"
+            android:text="프로필 수정"
+            android:textColor="@color/colorTitleGrey"
+            android:textSize="18sp" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorLineGrey" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/colorBackGrey"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/profile_img"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:background="@drawable/pick" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="25dp"
+                android:includeFontPadding="false"
+                android:letterSpacing="-0.05"
+                android:text="기업 이름"
+                android:textColor="@color/colorTitleGrey2"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/company_name"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/border_radius_grey"
+                android:hint="기업 이름을 입력해주세요."
+                android:maxLines="1"
+                android:includeFontPadding="false"
+                android:inputType="none"
+                android:letterSpacing="-0.05"
+                android:paddingLeft="15dp"
+                android:singleLine="true"
+                android:textColor="@color/colorTextGrey2"
+                android:textColorHint="@color/colorHintGrey"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="25dp"
+                android:includeFontPadding="false"
+                android:letterSpacing="-0.05"
+                android:text="사원 수"
+                android:textColor="@color/colorTitleGrey2"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/worker_cnt"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/border_radius_grey"
+                android:hint="사원 수를 입력해주세요."
+                android:maxLines="1"
+                android:includeFontPadding="false"
+                android:inputType="number"
+                android:letterSpacing="-0.05"
+                android:paddingLeft="15dp"
+                android:singleLine="true"
+                android:textColor="@color/colorTextGrey2"
+                android:textColorHint="@color/colorHintGrey"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="25dp"
+                android:includeFontPadding="false"
+                android:letterSpacing="-0.05"
+                android:text="설립 연도"
+                android:textColor="@color/colorTitleGrey2"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/since_year"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/border_radius_grey"
+                android:hint="20190101"
+                android:maxLines="1"
+                android:includeFontPadding="false"
+                android:inputType="number"
+                android:letterSpacing="-0.05"
+                android:paddingLeft="15dp"
+                android:singleLine="true"
+                android:textColor="@color/colorTextGrey2"
+                android:textColorHint="@color/colorHintGrey"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="25dp"
+                android:includeFontPadding="false"
+                android:letterSpacing="-0.05"
+                android:text="기업 형태"
+                android:textColor="@color/colorTitleGrey2"
+                android:textSize="16sp" />
+
+            <FrameLayout
+                android:id="@+id/spinner_con"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp">
+
+                <app.woojeong.happyboom.SpinnerReselect
+                    android:id="@+id/spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:background="#fff"
+                    android:scrollbars="none"
+                    android:spinnerMode="dropdown" />
+
+                <TextView
+                    android:id="@+id/spinner_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/border_radius_grey"
+                    android:gravity="center_vertical|left"
+                    android:includeFontPadding="false"
+                    android:letterSpacing="-0.05"
+                    android:paddingLeft="15dp"
+                    android:text=""
+                    android:textColor="#787878"
+                    android:textSize="13sp"
+
+                    />
+
+                <ImageView
+                    android:id="@+id/spinner_down"
+                    android:layout_width="10dp"
+                    android:layout_height="7dp"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="7dp"
+                    android:src="@drawable/down" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="25dp"
+                android:includeFontPadding="false"
+                android:letterSpacing="-0.05"
+                android:text="홈페이지"
+                android:textColor="@color/colorTitleGrey2"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/homepage"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/border_radius_grey"
+                android:hint="홈페이지 주소를 입력해주세요."
+                android:maxLines="1"
+                android:includeFontPadding="false"
+                android:inputType="none"
+                android:letterSpacing="-0.05"
+                android:paddingLeft="15dp"
+                android:singleLine="true"
+                android:textColor="@color/colorTextGrey2"
+                android:textColorHint="@color/colorHintGrey"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="25dp"
+                android:includeFontPadding="false"
+                android:letterSpacing="-0.05"
+                android:text="기업 소개"
+                android:textColor="@color/colorTitleGrey2"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/introduce"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/border_radius_grey"
+                android:hint="기업 소개 내용을 입력해주세요."
+                android:includeFontPadding="false"
+                android:inputType="text"
+                android:letterSpacing="-0.05"
+                android:paddingLeft="15dp"
+                android:singleLine="true"
+                android:textColor="@color/colorTextGrey2"
+                android:textColorHint="@color/colorHintGrey"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <FrameLayout
+        android:id="@+id/ok_con"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorMain">
+
+        <TextView
+            android:id="@+id/ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:includeFontPadding="false"
+            android:letterSpacing="-0.05"
+            android:text="확인"
+            android:textColor="#fff"
+            android:textSize="17sp"
+
+            />
+
+    </FrameLayout>
+</LinearLayout>

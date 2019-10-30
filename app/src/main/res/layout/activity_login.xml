@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".LoginActivity">
+
+
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="63dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/logo" />
+
+
+        <EditText
+            android:id="@+id/id"
+            android:layout_marginTop="70dp"
+            android:layout_width="210dp"
+            android:layout_height="40dp"
+            android:paddingLeft="10dp"
+            android:layout_gravity="center"
+            android:background="@drawable/border_radius_grey"
+            android:gravity="center_vertical|left"
+            android:hint="아이디"
+            android:maxLines="1"
+            android:includeFontPadding="false"
+            android:inputType="none"
+            android:letterSpacing="-0.05"
+            android:singleLine="true"
+            android:textColor="#242424"
+            android:textColorHint="#a1a1a1"
+            android:textSize="13sp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_marginTop="15dp"
+            android:layout_width="210dp"
+            android:layout_height="40dp"
+            android:paddingLeft="10dp"
+            android:layout_gravity="center"
+            android:background="@drawable/border_radius_grey"
+            android:gravity="center_vertical|left"
+            android:hint="비밀 번호"
+            android:maxLines="1"
+            android:includeFontPadding="false"
+            android:inputType="textPassword"
+            android:letterSpacing="-0.05"
+            android:singleLine="true"
+            android:textColor="#242424"
+            android:textColorHint="#a1a1a1"
+            android:textSize="13sp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            />
+
+    <FrameLayout
+        android:id="@+id/login_con"
+        android:layout_width="210dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/border_radius_blue">
+        <TextView
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:includeFontPadding="false"
+            android:letterSpacing="-0.05"
+            android:text="로그인"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="13sp" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/find_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:letterSpacing="-0.05"
+            android:textColor="@color/colorTextGrey2"
+            android:text="아이디 찾기"
+            android:textAlignment="center"
+            android:textSize="10dp" />
+        <TextView
+            android:includeFontPadding="false"
+            android:letterSpacing="-0.05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="10dp"
+            android:textColor="@color/colorTextGrey2"
+            android:textAlignment="center"
+            android:text="|"
+            />
+        <TextView
+            android:id="@+id/find_password"
+            android:includeFontPadding="false"
+            android:letterSpacing="-0.05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/colorTextGrey2"
+            android:text="비밀번호 찾기"
+            />
+        <TextView
+            android:includeFontPadding="false"
+            android:letterSpacing="-0.05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/colorTextGrey2"
+            android:text="|"
+            />
+        <TextView
+            android:id="@+id/join"
+            android:includeFontPadding="false"
+            android:letterSpacing="-0.05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/colorTextGrey2"
+            android:text="회원 가입"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <com.nhn.android.naverlogin.ui.view.OAuthLoginButton
+                android:id="@+id/naver_original_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/naver_icon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/login_naver"/>
+            <TextView
+                android:id="@+id/naver_text"
+                android:textColor="@color/colorTextGrey2"
+                android:includeFontPadding="false"
+                android:letterSpacing="-0.05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="10dp"
+                android:textAlignment="center"
+                android:text="네이버\n로그인"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <com.kakao.usermgmt.LoginButton
+                android:id="@+id/kakaotalk_original_btn"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/kakao_icon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/login_kakao"/>
+            <TextView
+                android:id="@+id/kakao_text"
+                android:textColor="@color/colorTextGrey2"
+                android:includeFontPadding="false"
+                android:letterSpacing="-0.05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="10dp"
+                android:textAlignment="center"
+                android:text="카카오톡\n로그인"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/facebook_icon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/login_facebook"/>
+            <TextView
+                android:id="@+id/facebook_text"
+                android:textColor="@color/colorTextGrey2"
+                android:includeFontPadding="false"
+                android:letterSpacing="-0.05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="10dp"
+                android:textAlignment="center"
+                android:text="페이스북\n로그인"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

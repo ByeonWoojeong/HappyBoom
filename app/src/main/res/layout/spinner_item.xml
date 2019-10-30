@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckedTextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:includeFontPadding="false"
+    android:letterSpacing="-0.05"
+    android:layout_height="40dp"
+    android:paddingLeft="13dp"
+    android:gravity="center_horizontal|center_vertical"
+    android:textColor="@color/colorTextGrey"
+    android:background="#fff"
+    android:textSize="13sp"
+    tools:text="item1"
+    />

@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".SettingsActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#fff">
+        <FrameLayout
+            android:id="@+id/back_con"
+            android:layout_width="45dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="22dp"
+                android:layout_height="17dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/back" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:includeFontPadding="false"
+            android:letterSpacing="-0.05"
+            android:text="설정"
+            android:textColor="@color/colorTitleGrey"
+            android:textSize="18sp" />
+    </FrameLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorLineGrey" />
+
+    <FrameLayout
+        android:id="@+id/contents_con"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#fff">
+        <TextView
+            android:id="@+id/contents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="21dp"
+            android:layout_gravity="center_vertical"
+            android:includeFontPadding="false"
+            android:letterSpacing="-0.05"
+            android:text="콘텐츠 관리"
+            android:textColor="@color/colorTitleGrey"
+            android:textSize="15sp" />
+    </FrameLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorLineGrey" />
+
+    <FrameLayout
+        android:id="@+id/notice_con"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#fff">
+        <TextView
+            android:id="@+id/notice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="21dp"
+            android:layout_gravity="center_vertical"
+            android:includeFontPadding="false"
+            android:letterSpacing="-0.05"
+            android:text="공지 사항"
+            android:textColor="@color/colorTitleGrey"
+            android:textSize="15sp" />
+    </FrameLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorLineGrey" />
+
+
+    <FrameLayout
+        android:id="@+id/event_con"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#fff">
+        <TextView
+            android:id="@+id/event"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="21dp"
+            android:layout_gravity="center_vertical"
+            android:includeFontPadding="false"
+            android:letterSpacing="-0.05"
+            android:text="이벤트"
+            android:textColor="@color/colorTitleGrey"
+            android:textSize="15sp" />
+    </FrameLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorLineGrey" />
+
+
+    <FrameLayout
+        android:id="@+id/push_con"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#fff">
+        <TextView
+            android:id="@+id/push"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="21dp"
+            android:layout_gravity="center_vertical"
+            android:includeFontPadding="false"
+            android:letterSpacing="-0.05"
+            android:text="알림 설정"
+            android:textColor="@color/colorTitleGrey"
+            android:textSize="15sp" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/push_switch"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="right|center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:checked="true"
+            android:longClickable="false"
+            android:textOn="ON"
+            android:textOff="OFF"
+            app:switchTextAppearance="@style/BrandedSwitch.text"
+            app:theme="@style/BrandedSwitch.control"
+            app:showText="true"
+            />
+    </FrameLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorLineGrey" />
+
+    <FrameLayout
+        android:id="@+id/payment_con"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#fff">
+        <TextView
+            android:id="@+id/payment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="21dp"
+            android:layout_gravity="center_vertical"
+            android:includeFontPadding="false"
+            android:letterSpacing="-0.05"
+            android:text="상품 결제"
+            android:textColor="@color/colorTitleGrey"
+            android:textSize="15sp" />
+    </FrameLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorLineGrey" />
+
+    <FrameLayout
+        android:id="@+id/terms_con"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#fff">
+        <TextView
+            android:id="@+id/terms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="21dp"
+            android:layout_gravity="center_vertical"
+            android:includeFontPadding="false"
+            android:letterSpacing="-0.05"
+            android:text="이용 약관"
+            android:textColor="@color/colorTitleGrey"
+            android:textSize="15sp" />
+    </FrameLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorLineGrey" />
+
+    <FrameLayout
+        android:id="@+id/password_con"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#fff">
+        <TextView
+            android:id="@+id/password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="21dp"
+            android:layout_gravity="center_vertical"
+            android:includeFontPadding="false"
+            android:letterSpacing="-0.05"
+            android:text="비밀번호 변경"
+            android:textColor="@color/colorTitleGrey"
+            android:textSize="15sp" />
+    </FrameLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorLineGrey" />
+
+    <FrameLayout
+        android:id="@+id/logout_con"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#fff">
+        <TextView
+            android:id="@+id/logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="21dp"
+            android:layout_gravity="center_vertical"
+            android:includeFontPadding="false"
+            android:letterSpacing="-0.05"
+            android:text="로그아웃"
+            android:textColor="@color/colorTitleGrey"
+            android:textSize="15sp" />
+    </FrameLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorLineGrey" />
+
+    <FrameLayout
+        android:id="@+id/withdrawal_con"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#fff">
+        <TextView
+            android:id="@+id/withdrawal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="21dp"
+            android:layout_gravity="center_vertical"
+            android:includeFontPadding="false"
+            android:letterSpacing="-0.05"
+            android:text="탈퇴"
+            android:textColor="@color/colorTitleGrey"
+            android:textSize="15sp" />
+    </FrameLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorLineGrey" />
+
+</LinearLayout>

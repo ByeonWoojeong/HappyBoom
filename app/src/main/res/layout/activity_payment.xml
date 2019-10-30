@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackGrey"
+    android:orientation="vertical"
+    tools:context=".PaymentActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#fff">
+
+        <FrameLayout
+            android:id="@+id/back_con"
+            android:layout_width="45dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="22dp"
+                android:layout_height="17dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/back" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:includeFontPadding="false"
+            android:letterSpacing="-0.05"
+            android:text="결제"
+            android:textColor="@color/colorTitleGrey"
+            android:textSize="18sp" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorLineGrey" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/colorBackGrey"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="35dp"
+                android:includeFontPadding="false"
+                android:letterSpacing="-0.05"
+                android:text="결제 안내 및 유의 사항"
+                android:textColor="@color/colorTitleGrey"
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:id="@+id/explain"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_margin="20dp"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/border_radius_grey"
+                android:includeFontPadding="false"
+                android:letterSpacing="-0.05"
+                android:textColor="@color/colorTitleGrey"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:includeFontPadding="false"
+                android:letterSpacing="-0.05"
+                android:text="결제 상품 선택"
+                android:textColor="@color/colorTitleGrey"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/border_radius_grey"
+                android:orientation="vertical">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:includeFontPadding="false"
+                        android:letterSpacing="-0.05"
+                        android:text="A.1개월권 (영상 1편 등록)"
+                        android:textColor="@color/colorTextGrey"
+                        android:textSize="13sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="55dp"
+                        android:layout_gravity="center_vertical|end"
+                        android:includeFontPadding="false"
+                        android:letterSpacing="-0.05"
+                        tools:text="(30,000)"
+                        android:textColor="@color/colorTextGrey"
+                        android:textSize="13sp" />
+
+                    <CheckBox
+                        android:id="@+id/check_a"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="end|center_vertical"
+                        android:layout_marginEnd="10dp"
+                        android:gravity="center"
+                        android:button="@drawable/check_button"
+                        android:focusable="false"
+                        android:checked="false"/>
+                </FrameLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/colorLineGrey" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:includeFontPadding="false"
+                        android:letterSpacing="-0.05"
+                        android:text="B.3개월권 (영상 5편 등록)"
+                        android:textColor="@color/colorTextGrey"
+                        android:textSize="13sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="55dp"
+                        android:layout_gravity="center_vertical|end"
+                        android:includeFontPadding="false"
+                        android:letterSpacing="-0.05"
+                        tools:text="(30,000)"
+                        android:textColor="@color/colorTextGrey"
+                        android:textSize="13sp" />
+
+                    <CheckBox
+                        android:id="@+id/check_b"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="end|center_vertical"
+                        android:layout_marginEnd="10dp"
+                        android:gravity="center"
+                        android:button="@drawable/check_button"
+                        android:focusable="false"
+                        android:checked="false"/>
+                </FrameLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/colorLineGrey" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:includeFontPadding="false"
+                        android:letterSpacing="-0.05"
+                        android:text="B.6개월권 (영상 10편 등록)"
+                        android:textColor="@color/colorTextGrey"
+                        android:textSize="13sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="55dp"
+                        android:layout_gravity="center_vertical|end"
+                        android:includeFontPadding="false"
+                        android:letterSpacing="-0.05"
+                        tools:text="(50,000)"
+                        android:textColor="@color/colorTextGrey"
+                        android:textSize="13sp" />
+
+                    <CheckBox
+                        android:id="@+id/check_c"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="end|center_vertical"
+                        android:layout_marginEnd="10dp"
+                        android:gravity="center"
+                        android:button="@drawable/check_button"
+                        android:focusable="false"
+                        android:checked="false"/>
+                </FrameLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <FrameLayout
+        android:id="@+id/ok_con"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_gravity="bottom"
+        android:background="@color/colorMain">
+
+        <TextView
+            android:id="@+id/ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:includeFontPadding="false"
+            android:letterSpacing="-0.05"
+            android:text="결제하기"
+            android:textColor="#fff"
+            android:textSize="15sp" />
+
+    </FrameLayout>
+
+</LinearLayout>

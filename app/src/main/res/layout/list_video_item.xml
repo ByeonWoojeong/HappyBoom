@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/border_radius_grey"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/image_con"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="#000">
+            <ImageView
+                android:id="@+id/company_image"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_height="150dp" />
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/colorLineGrey"/>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="15dp"
+            android:paddingEnd="15dp">
+            <TextView
+                android:id="@+id/company_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:includeFontPadding="false"
+                android:letterSpacing="-0.05"
+                tools:text="기업명"
+                android:textColor="@color/colorTitleGrey"
+                android:textSize="15sp" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

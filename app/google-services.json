@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "670130533338",
+    "firebase_url": "https://happyboom.firebaseio.com",
+    "project_id": "happyboom",
+    "storage_bucket": "happyboom.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:670130533338:android:58f27d5728f93043",
+        "android_client_info": {
+          "package_name": "app.woojeong.happyboom"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "670130533338-9mmb7lkovai20jsbjg79ilhdvgcv7dbc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "app.woojeong.happyboom",
+            "certificate_hash": "d5567051cbfc0c3ba18c2ad744b5834e554c02d0"
+          }
+        },
+        {
+          "client_id": "670130533338-02slv2586cdi9kl7pu22q991ij1rlqq8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDE01AMPnvZ3ceFWbVPrR1ZQeXYPgRebxk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "670130533338-02slv2586cdi9kl7pu22q991ij1rlqq8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

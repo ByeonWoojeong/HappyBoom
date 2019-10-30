@@ -1,0 +1,67 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="AppTheme2" parent="Theme.MaterialComponents.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#fff</item>
+        <item name="colorPrimaryDark">#fff</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="Theme.AppCompat.Light.NoActionBar.FullScreen" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="TextInputLayout" parent="TextAppearance.AppCompat">
+        <item name="android:textColorHint">#a7a7a7</item>
+        <item name="android:textSize">14sp</item>
+        <item name="colorAccent">#5a5a5a</item>
+        <item name="colorControlNormal">#a7a7a7</item>
+        <item name="colorControlActivated">#a7a7a7</item>
+    </style>
+
+    <style name="Base.Widget.Design.TabLayout" parent="android:Widget"/>
+    <style name="TabLayout1" parent="android:Widget">
+        <item name="tabBackground">@drawable/tab_background</item>
+        <item name="tabIndicatorColor">#ffffff</item>
+        <item name="tabIndicatorHeight">3dp</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+
+    <style name="MyTabLayoutTextAppearance" parent="TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse">
+        <item name="android:textSize">15sp</item>
+        <item name="android:scrollbarThumbVertical">@color/colorTransparent</item>
+    </style>
+
+    <style name="BrandedSwitch.control" parent="Theme.AppCompat.Light">
+        <item name="colorControlActivated">@color/colorMain2</item>
+        <item name="colorSwitchThumbNormal">#5a5a5a</item>
+    </style>
+    <style name="BrandedSwitch.text" parent="Theme.AppCompat.Light">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">9dp</item>
+    </style>
+</resources>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="350dp"
+    android:background="#000"
+    android:orientation="vertical"> <!--300dp-->
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/black">
+
+            <VideoView
+                android:id="@+id/encodingAdView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_above="@+id/encodingText"
+                android:layout_marginBottom="30dp">
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_gravity="center"
+                    android:progressTint="@android:color/holo_orange_light" />
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/encodingText"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="-30dp"
+                android:background="@android:color/holo_orange_light"
+                android:gravity="center"
+                android:text="Preparing encoding…"
+                android:textSize="20dp"
+                tools:ignore="SpUsage" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

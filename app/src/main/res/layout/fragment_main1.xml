@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c9c9c9"
+    tools:context=".Main1Fragment">
+
+    <ListView
+        android:id="@+id/main_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:overScrollMode="never"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/community"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="195dp"
+        android:layout_gravity="bottom|end"
+        android:visibility="invisible"
+        android:background="@drawable/write_community"/>
+
+    <ImageView
+        android:id="@+id/edit_video"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="115dp"
+        android:layout_gravity="bottom|end"
+        android:visibility="invisible"
+        android:background="@drawable/edit_video"/>
+
+    <ImageView
+        android:id="@+id/write"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="40dp"
+        android:layout_gravity="bottom|end"
+        android:background="@drawable/write"/>
+
+</FrameLayout>

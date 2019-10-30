@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        app:elevation="0dp"
+        android:weightSum="1">
+
+
+
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
+
+                <EditText
+                    android:id="@+id/search_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="90dp"
+                    android:background="@drawable/border_radius_grey"
+                    android:hint="검색어를 입력해주세요."
+                    android:maxLines="1"
+                    android:includeFontPadding="false"
+                    android:inputType="none"
+                    android:letterSpacing="-0.05"
+                    android:paddingLeft="15dp"
+                    android:singleLine="true"
+                    android:textColor="@color/colorTextGrey2"
+                    android:textColorHint="@color/colorHintGrey"
+                    android:textSize="13sp"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:id="@+id/logo"
+                    android:layout_width="99dp"
+                    android:layout_height="37dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/logo"
+                    android:visibility="visible"/>
+
+                <ImageView
+                    android:id="@+id/search"
+                    android:layout_width="23dp"
+                    android:layout_height="23dp"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_marginRight="50dp"
+                    android:background="@drawable/search"/>
+
+                <ImageView
+                    android:id="@+id/settings"
+                    android:layout_width="23dp"
+                    android:layout_height="23dp"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_marginRight="18dp"
+                    android:background="@drawable/settings"/>
+            </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/colorLineGrey2"/>
+
+            <FrameLayout
+                android:id="@+id/tab_con"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                >
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/main_tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    app:tabTextAppearance="@style/MyTabLayoutTextAppearance"
+                    app:tabSelectedTextColor="#ffffff"
+                    style="@style/TabLayout1"
+                    app:tabMode="fixed"
+                    android:scrollbars="none"
+                    android:overScrollMode="never" />
+
+            </FrameLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include layout="@layout/main_pager" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#208dcd</color>
+    <color name="colorPrimaryDark">#208dcd</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="colorStatusBar">#aaaaaa</color>
+
+    <color name="colorMain">#208dcd</color>
+    <color name="colorMain2">#ffcd33</color>
+    <color name="colorTransparent">#00000000</color>
+
+    <color name="black">#000</color>
+
+    <color name="colorGray">#52000000</color>
+    <color name="colorLineGrey">#d1d1d1</color>
+    <color name="colorLineGrey2">#a1a1a1</color>
+    <color name="colorBackGrey">#f7f8f8</color>
+    <color name="colorTitleGrey">#313131</color>
+    <color name="colorTitleGrey2">#535353</color>
+    <color name="colorTextGrey">#313131</color>
+    <color name="colorTextGrey2">#606060</color>
+    <color name="colorHintGrey">#b2b2b2</color>
+    <color name="colorCommentDateGrey">#8a8a8a</color>
+    <color name="colorCommentGrey">#616262</color>
+
+    <color name="colorToolbarBack">#424242</color>
+
+    <array name="paranoid_theme">
+        <!-- Overview -->
+        <item>#151515</item> <!--  Top Header bg -->
+        <item>#BB86FC</item> <!-- header text   -->
+        <item>#252525</item> <!-- list bg  -->
+        <item>@android:color/white</item> <!--  storage list name text  -->
+        <item>#e1e1e1</item> <!-- free space text  -->
+        <item>#BB86FC</item> <!-- memory bar -->
+
+        <!-- secondary dialog colors -->
+        <item>#151515</item> <!-- folder tint -->
+        <item>#252525</item> <!-- list bg -->
+        <item>@android:color/white</item> <!-- list text -->
+        <item>#151515</item> <!-- address bar tint -->
+        <item>#50ffffff</item> <!-- new folder hint tint -->
+        <item>#BB86FC</item> <!-- select button color -->
+        <item>#da6c6c</item> <!-- new folder layour bg -->
+        <item>#BB86FC</item> <!-- fab multi color -->
+        <item>#151515</item> <!-- address bar bg -->
+    </array>
+</resources>

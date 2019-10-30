@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".UploadVideoActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#fff">
+        <FrameLayout
+            android:id="@+id/back_con"
+            android:layout_width="45dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="22dp"
+                android:layout_height="17dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/back" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:includeFontPadding="false"
+            android:letterSpacing="-0.05"
+            android:text="영상 등록"
+            android:textColor="@color/colorTitleGrey"
+            android:textSize="18sp" />
+    </FrameLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorLineGrey" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/colorBackGrey"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="20dp"
+                    android:includeFontPadding="false"
+                    android:letterSpacing="-0.05"
+                    android:text="등록 위치"
+                    android:textColor="@color/colorTitleGrey2"
+                    android:textSize="16sp" />
+
+                <FrameLayout
+                    android:id="@+id/spinner_con"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp">
+
+                    <app.woojeong.happyboom.SpinnerReselect
+                        android:id="@+id/spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#fff"
+                        android:spinnerMode="dropdown"
+                        android:scrollbars="none"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        />
+
+                    <TextView
+                        android:id="@+id/spinner_text"
+                        android:background="@drawable/border_radius_grey"
+                        android:paddingLeft="15dp"
+                        android:includeFontPadding="false"
+                        android:letterSpacing="-0.05"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="#787878"
+                        android:textSize="13sp"
+                        android:text=""
+                        android:gravity="center_vertical|left"
+
+                        />
+
+                    <ImageView
+                        android:id="@+id/spinner_down"
+                        android:layout_width="10dp"
+                        android:layout_height="7dp"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginRight="7dp"
+                        android:src="@drawable/down" />
+                </FrameLayout>
+            </LinearLayout>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="20dp"
+                android:includeFontPadding="false"
+                android:letterSpacing="-0.05"
+                android:text="영상 제목"
+                android:textColor="@color/colorTitleGrey2"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/video_title"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/border_radius_grey"
+                android:hint=""
+                android:includeFontPadding="false"
+                android:inputType="text"
+                android:letterSpacing="-0.05"
+                android:maxLines="1"
+                android:paddingLeft="15dp"
+                android:singleLine="true"
+                android:textColor="@color/colorTextGrey2"
+                android:textColorHint="@color/colorHintGrey"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="20dp"
+                android:includeFontPadding="false"
+                android:letterSpacing="-0.05"
+                android:text="영상 업로드"
+                android:textColor="@color/colorTitleGrey2"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp">
+
+                <TextView
+                    android:id="@+id/file_name"
+                    android:layout_width="0dp"
+                    android:layout_weight="8.5"
+                    android:layout_height="40dp"
+                    android:paddingLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:includeFontPadding="false"
+                    android:letterSpacing="-0.05"
+                    android:text="영상 파일을 첨부해주세요"
+                    android:textColor="@color/colorHintGrey"
+                    android:background="@drawable/border_left_radius_grey"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/video_upload"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.5"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:letterSpacing="-0.05"
+                    android:text="첨부"
+                    android:background="@drawable/border_right_radius_grey"
+                    android:textColor="@color/colorTitleGrey2"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="25dp"
+                android:includeFontPadding="false"
+                android:letterSpacing="-0.05"
+                android:text="영상 썸네일 업로드"
+                android:textColor="@color/colorTitleGrey2"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp">
+
+                <TextView
+                    android:id="@+id/thumbnail_name"
+                    android:layout_width="0dp"
+                    android:layout_weight="8.5"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:includeFontPadding="false"
+                    android:paddingLeft="15dp"
+                    android:letterSpacing="-0.05"
+                    android:text="썸네일 이미지를 첨부해주세요"
+                    android:textColor="@color/colorHintGrey"
+                    android:background="@drawable/border_left_radius_grey"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/thumbnail_upload"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.5"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:letterSpacing="-0.05"
+                    android:text="첨부"
+                    android:background="@drawable/border_right_radius_grey"
+                    android:textColor="@color/colorTitleGrey2"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+        </LinearLayout></ScrollView>
+
+    <FrameLayout
+        android:id="@+id/ok_con"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorMain"
+        >
+
+        <TextView
+            android:id="@+id/ok"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:includeFontPadding="false"
+            android:letterSpacing="-0.05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:text="등록"
+            android:textSize="17sp"
+            android:layout_gravity="center_horizontal|center_vertical"
+
+            />
+
+    </FrameLayout>
+</LinearLayout>

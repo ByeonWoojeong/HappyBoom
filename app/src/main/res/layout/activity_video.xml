@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context=".VideoActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#fff">
+
+        <FrameLayout
+            android:id="@+id/back_con"
+            android:layout_width="45dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="22dp"
+                android:layout_height="17dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/back" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:includeFontPadding="false"
+            android:letterSpacing="-0.05"
+            tools:text="영상 제목"
+            android:textColor="@color/colorTitleGrey"
+            android:textSize="18sp" />
+
+        <FrameLayout
+            android:id="@+id/delete_con"
+            android:layout_width="85dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="end">
+            <TextView
+                android:id="@+id/delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:includeFontPadding="false"
+                android:letterSpacing="-0.05"
+                android:text="삭제"
+                android:textColor="@color/colorTitleGrey"
+                android:textSize="15sp" />
+        </FrameLayout>
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorLineGrey" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9"
+            android:background="#000">
+            <WebView
+                android:id="@+id/video_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"/>
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:id="@+id/ok_con"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@color/colorMain">
+
+            <TextView
+                android:id="@+id/ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:includeFontPadding="false"
+                android:letterSpacing="-0.05"
+                android:text="선택"
+                android:textColor="#fff"
+                android:textSize="17sp"
+                />
+
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

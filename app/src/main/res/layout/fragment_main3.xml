@@ -1,0 +1,824 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context=".Main3Fragment">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/colorBackGrey"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/profile_img"
+                android:layout_width="match_parent"
+                android:layout_height="250dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="11dp"
+                android:background="@color/colorLineGrey" />
+
+
+            <LinearLayout
+                android:id="@+id/ceo_con"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="33dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="18dp"
+                        android:includeFontPadding="false"
+                        android:letterSpacing="-0.05"
+                        android:text="기업 이름"
+                        android:textColor="@color/colorTitleGrey2"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/company_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|end"
+                        android:layout_marginEnd="18dp"
+                        android:includeFontPadding="false"
+                        android:letterSpacing="-0.05"
+                        android:textColor="#848484"
+                        android:textSize="15sp"
+                        tools:text="abc" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="33dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="18dp"
+                        android:includeFontPadding="false"
+                        android:letterSpacing="-0.05"
+                        android:text="사원 수"
+                        android:textColor="@color/colorTitleGrey2"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/worker_cnt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|end"
+                        android:layout_marginEnd="18dp"
+                        android:includeFontPadding="false"
+                        android:letterSpacing="-0.05"
+                        android:textColor="#848484"
+                        android:textSize="15sp"
+                        tools:text="abc" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="33dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="18dp"
+                        android:includeFontPadding="false"
+                        android:letterSpacing="-0.05"
+                        android:text="설립 연도"
+                        android:textColor="@color/colorTitleGrey2"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/since_year"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|end"
+                        android:layout_marginEnd="18dp"
+                        android:includeFontPadding="false"
+                        android:letterSpacing="-0.05"
+                        android:textColor="#848484"
+                        android:textSize="15sp"
+                        tools:text="abc" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="33dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="18dp"
+                        android:includeFontPadding="false"
+                        android:letterSpacing="-0.05"
+                        android:text="기업 형태"
+                        android:textColor="@color/colorTitleGrey2"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/company_form"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|end"
+                        android:layout_marginEnd="18dp"
+                        android:includeFontPadding="false"
+                        android:letterSpacing="-0.05"
+                        android:textColor="#848484"
+                        android:textSize="15sp"
+                        tools:text="abc" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="33dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="18dp"
+                        android:includeFontPadding="false"
+                        android:letterSpacing="-0.05"
+                        android:text="홈페이지"
+                        android:textColor="@color/colorTitleGrey2"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/homepage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|end"
+                        android:layout_marginEnd="18dp"
+                        android:includeFontPadding="false"
+                        android:letterSpacing="-0.05"
+                        android:textColor="#848484"
+                        android:textSize="15sp"
+                        tools:text="abc" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="11dp"
+                    android:background="@color/colorLineGrey" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginTop="12dp"
+                        android:includeFontPadding="false"
+                        android:letterSpacing="-0.05"
+                        android:text="기업 소개"
+                        android:textColor="@color/colorTitleGrey2"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/introduce_ceo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginBottom="40dp"
+                        android:includeFontPadding="false"
+                        android:letterSpacing="-0.05"
+                        android:textColor="#848484"
+                        android:textSize="15sp"
+                        tools:text="기업 소개란" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="11dp"
+                    android:background="@color/colorLineGrey" />
+
+                <LinearLayout
+                    android:id="@+id/item0_con"
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:background="#b2b2b2"
+                    android:clickable="false"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:includeFontPadding="false"
+                            android:letterSpacing="-0.05"
+                            android:textColor="#848484"
+                            android:textSize="15sp"
+                            android:text="구인 공고" />
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="@color/colorLineGrey" />
+
+                <LinearLayout
+                    android:id="@+id/item1_con"
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:background="#b2b2b2"
+                    android:clickable="false"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:includeFontPadding="false"
+                            android:letterSpacing="-0.05"
+                            android:textColor="#848484"
+                            android:textSize="15sp"
+                            android:text="결제상품" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:includeFontPadding="false"
+                            android:letterSpacing="-0.05"
+                            android:textColor="#848484"
+                            android:textSize="15sp"
+                            android:text="1개월" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:background="#888" />
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:includeFontPadding="false"
+                            android:letterSpacing="-0.05"
+                            android:textColor="#848484"
+                            android:textSize="15sp"
+                            android:text="만료일" />
+                        <TextView
+                            android:id="@+id/exp_date1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:includeFontPadding="false"
+                            android:letterSpacing="-0.05"
+                            android:textColor="#848484"
+                            android:textSize="15sp"
+                            tools:text="2019-11-11" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:background="#888" />
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:includeFontPadding="false"
+                            android:letterSpacing="-0.05"
+                            android:textColor="#848484"
+                            android:textSize="15sp"
+                            android:text="등록 영상 수" />
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:id="@+id/video_cnt1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:includeFontPadding="false"
+                                android:letterSpacing="-0.05"
+                                android:textColor="#848484"
+                                android:textSize="15sp"
+                                tools:text="0" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="@color/colorLineGrey" />
+
+                <LinearLayout
+                    android:id="@+id/item3_con"
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:background="#b2b2b2"
+                    android:clickable="false"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:includeFontPadding="false"
+                            android:letterSpacing="-0.05"
+                            android:textColor="#848484"
+                            android:textSize="15sp"
+                            android:text="결제상품" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:includeFontPadding="false"
+                            android:letterSpacing="-0.05"
+                            android:textColor="#848484"
+                            android:textSize="15sp"
+                            android:text="3개월" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:background="#888" />
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:includeFontPadding="false"
+                            android:letterSpacing="-0.05"
+                            android:textColor="#848484"
+                            android:textSize="15sp"
+                            android:text="만료일" />
+                        <TextView
+                            android:id="@+id/exp_date3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:includeFontPadding="false"
+                            android:letterSpacing="-0.05"
+                            android:textColor="#848484"
+                            android:textSize="15sp"
+                            tools:text="2019-11-11" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:background="#888" />
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:includeFontPadding="false"
+                            android:letterSpacing="-0.05"
+                            android:textColor="#848484"
+                            android:textSize="15sp"
+                            android:text="등록 영상 수" />
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:id="@+id/video_cnt3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:includeFontPadding="false"
+                                android:letterSpacing="-0.05"
+                                android:textColor="#848484"
+                                android:textSize="15sp"
+                                tools:text="0" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="@color/colorLineGrey" />
+
+                <LinearLayout
+                    android:id="@+id/item6_con"
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:background="#b2b2b2"
+                    android:clickable="false"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:includeFontPadding="false"
+                            android:letterSpacing="-0.05"
+                            android:textColor="#848484"
+                            android:textSize="15sp"
+                            android:text="결제상품" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:includeFontPadding="false"
+                            android:letterSpacing="-0.05"
+                            android:textColor="#848484"
+                            android:textSize="15sp"
+                            android:text="6개월" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:background="#888" />
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:includeFontPadding="false"
+                            android:letterSpacing="-0.05"
+                            android:textColor="#848484"
+                            android:textSize="15sp"
+                            android:text="만료일" />
+                        <TextView
+                            android:id="@+id/exp_date6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:includeFontPadding="false"
+                            android:letterSpacing="-0.05"
+                            android:textColor="#848484"
+                            android:textSize="15sp"
+                            tools:text="2019-11-11" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:background="#888" />
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:includeFontPadding="false"
+                            android:letterSpacing="-0.05"
+                            android:textColor="#848484"
+                            android:textSize="15sp"
+                            android:text="등록 영상 수" />
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:id="@+id/video_cnt6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:includeFontPadding="false"
+                                android:letterSpacing="-0.05"
+                                android:textColor="#848484"
+                                android:textSize="15sp"
+                                tools:text="0" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="@color/colorLineGrey" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/normal_con"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="33dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="18dp"
+                        android:includeFontPadding="false"
+                        android:letterSpacing="-0.05"
+                        android:text="닉네임"
+                        android:textColor="@color/colorTitleGrey2"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/nickname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|end"
+                        android:layout_marginEnd="18dp"
+                        android:includeFontPadding="false"
+                        android:letterSpacing="-0.05"
+                        android:textColor="#848484"
+                        android:textSize="15sp"
+                        tools:text="abc" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="33dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="18dp"
+                        android:includeFontPadding="false"
+                        android:letterSpacing="-0.05"
+                        android:text="가입일자"
+                        android:textColor="@color/colorTitleGrey2"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/join_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|end"
+                        android:layout_marginEnd="18dp"
+                        android:includeFontPadding="false"
+                        android:letterSpacing="-0.05"
+                        android:textColor="#848484"
+                        android:textSize="15sp"
+                        tools:text="2019년07월15일" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="33dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="18dp"
+                        android:includeFontPadding="false"
+                        android:letterSpacing="-0.05"
+                        android:text="생년월일"
+                        android:textColor="@color/colorTitleGrey2"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/birth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|end"
+                        android:layout_marginEnd="18dp"
+                        android:includeFontPadding="false"
+                        android:letterSpacing="-0.05"
+                        android:textColor="#848484"
+                        android:textSize="15sp"
+                        tools:text="2019년07월15일" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginStart="18dp"
+                        android:includeFontPadding="false"
+                        android:letterSpacing="-0.05"
+                        android:text="꿈"
+                        android:textColor="@color/colorTitleGrey2"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/dream"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginEnd="18dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="9dp"
+                        android:includeFontPadding="false"
+                        android:letterSpacing="-0.05"
+                        android:textColor="#848484"
+                        android:textSize="15sp"
+                        tools:text="abc" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="11dp"
+                    android:background="@color/colorLineGrey" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginTop="12dp"
+                        android:includeFontPadding="false"
+                        android:letterSpacing="-0.05"
+                        android:text="간단 소개"
+                        android:textColor="@color/colorTitleGrey2"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/introduce_normal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="40dp"
+                        android:includeFontPadding="false"
+                        android:letterSpacing="-0.05"
+                        android:textColor="#848484"
+                        android:textSize="15sp"
+                        tools:text="간단 소개란" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="11dp"
+                    android:background="@color/colorLineGrey" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:id="@+id/video_con"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="56dp"
+            android:background="@color/colorMain"
+            android:visibility="visible"
+            >
+
+            <TextView
+                android:id="@+id/video"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:includeFontPadding="false"
+                android:letterSpacing="-0.05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:text="영상 등록"
+                android:textSize="17sp"
+                android:layout_gravity="center_horizontal|center_vertical"
+
+                />
+            <View
+                android:id="@+id/visible_line"
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:background="#fff"/>
+        </FrameLayout>
+
+
+        <FrameLayout
+        android:id="@+id/edit_con"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+        android:layout_height="56dp"
+        android:background="@color/colorMain"
+        >
+
+        <TextView
+            android:id="@+id/edit"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:includeFontPadding="false"
+            android:letterSpacing="-0.05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:text="수정"
+            android:textSize="17sp"
+            android:layout_gravity="center_horizontal|center_vertical"
+
+            />
+
+    </FrameLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

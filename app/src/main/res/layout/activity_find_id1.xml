@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="@color/colorBackGrey"
+    tools:context=".FindID1Activity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#fff">
+        <FrameLayout
+            android:id="@+id/back_con"
+            android:layout_width="45dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="22dp"
+                android:layout_height="17dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/back" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:includeFontPadding="false"
+            android:letterSpacing="-0.05"
+            android:text="아이디 찾기"
+            android:textColor="@color/colorTitleGrey"
+            android:textSize="18sp" />
+    </FrameLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorLineGrey" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/colorBackGrey"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RadioGroup
+                android:id="@+id/radio_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center">
+            <RadioButton
+                android:id="@+id/normal_radio"
+                android:textColor="@color/colorTextGrey"
+                android:textSize="13sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/radio_button"
+                android:text="  일반 회원"/>
+            <RadioButton
+                android:id="@+id/company_radio"
+                android:textColor="@color/colorTextGrey"
+                android:textSize="13sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/radio_button"
+                android:text="  기업 회원"/>
+            </RadioGroup>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/border_radius_grey">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:includeFontPadding="false"
+                        android:letterSpacing="-0.05"
+                        android:text="전화 번호"
+                        android:textColor="@color/colorTextGrey"
+                        android:textSize="13sp" />
+                    <EditText
+                        android:id="@+id/phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="70dp"
+                        android:hint="ex) 01022223333"
+                        android:maxLines="1"
+                        android:background="@null"
+                        android:padding="10dp"
+                        android:inputType="phone"
+                        android:textColor="#000"
+                        android:textColorHint="@color/colorHintGrey"
+                        android:textSize="13sp" />
+
+                    <ImageView
+                        android:id="@+id/send"
+                        android:layout_width="60dp"
+                        android:layout_height="22dp"
+                        android:layout_gravity="end|center_vertical"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/send"/>
+                </FrameLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/colorLineGrey" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:includeFontPadding="false"
+                        android:letterSpacing="-0.05"
+                        android:text="인증번호 입력"
+                        android:textColor="@color/colorTextGrey"
+                        android:textSize="13sp" />
+                    <EditText
+                        android:id="@+id/my_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="90dp"
+                        android:hint="인증 번호를 입력하세요."
+                        android:maxLines="1"
+                        android:background="@null"
+                        android:padding="10dp"
+                        android:inputType="number"
+                        android:textColor="#000"
+                        android:textColorHint="@color/colorHintGrey"
+                        android:textSize="13sp" />
+                    <ImageView
+                        android:id="@+id/verify"
+                        android:layout_width="60dp"
+                        android:layout_height="22dp"
+                        android:layout_gravity="end|center_vertical"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/ok"/>
+                </FrameLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout></ScrollView>
+
+
+
+    <FrameLayout
+        android:id="@+id/ok_con"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_gravity="bottom"
+        android:background="@color/colorMain"
+        >
+
+        <TextView
+            android:id="@+id/ok"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:includeFontPadding="false"
+            android:letterSpacing="-0.05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:text="아이디 찾기"
+            android:textSize="15sp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            />
+
+    </FrameLayout>
+
+</LinearLayout>

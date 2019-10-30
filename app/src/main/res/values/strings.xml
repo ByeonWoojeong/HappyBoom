@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">해피붐</string>
+    <string name="kakao_app_key">399ecd80e4c1bb3db6b338d2cc02f2cf</string>
+    <string name="facebook_app_id" translatable="false">2383023045079063</string>
+    <string name="fb_login_protocol_scheme">fb2383023045079063</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="check_time">시간을 확인해주세요.</string>
+    <string name="end_faster_than_start">끝이 시작보다 빠를 수 없습니다.</string>
+    <string name="enter_contents">내용을 입력해주세요.</string>
+    <string name="select_voice_type">음성 종류를 선택해주세요.</string>
+    <string name="no_problem"> </string>
+</resources>

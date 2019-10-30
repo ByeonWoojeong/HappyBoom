@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="InputMaskEditText">
+        <attr name="mask" format="string"  />
+        <attr name="allowedText" format="string" />
+        <attr name="deniedText" format="string" />
+        <attr name="char_representation" format="string" />
+        <attr name="keepHint" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="BorderLayout">
+        <attr name="border_color" format="string" />
+        <attr name="border_width" type="integer" format="integer" />
+        <attr name="border_top" type="integer" format="integer" />
+        <attr name="border_bottom" type="integer" format="integer" />
+        <attr name="border_left" type="integer" format="integer" />
+        <attr name="border_right" type="integer" format="integer" />
+    </declare-styleable>
+</resources>
